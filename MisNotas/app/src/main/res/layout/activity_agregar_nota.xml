@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AgregarNotaActivity"
+    android:background="@color/colorPrimaryLight">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:text="NOTA"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/tituloEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo"/>
+
+    <EditText
+        android:id="@+id/contenidoEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribir nota..."
+        android:textColor="@color/secondary_text"
+        android:inputType="textMultiLine"
+        android:layout_weight="1"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/primary_text"
+        android:text="@string/guardar"/>
+
+
+</LinearLayout>
